@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Security.ExchangeActiveSyncProvisioning;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,20 @@ namespace AppTooling
         public DevicePage()
         {
             this.InitializeComponent();
+            GetDeviceInformation();
+        }
+
+        private void GetDeviceInformation()
+        {
+            var deviceInfo = new EasClientDeviceInformation();
+
+            DeviceId.Text = deviceInfo.Id.ToString();
+
+            OperatingSystem.Text = deviceInfo.OperatingSystem;
+
+            ComputerName.Text = deviceInfo.FriendlyName;
+
+            Manufacturer.Text = deviceInfo.SystemManufacturer;
         }
     }
 }

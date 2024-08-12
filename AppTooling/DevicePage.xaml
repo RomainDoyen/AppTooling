@@ -9,6 +9,32 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Text="Informations système" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Informations système" FontSize="40" Grid.Row="0" />
+
+        <ScrollViewer Grid.Row="1" VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel VerticalAlignment="Top" Orientation="Vertical">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                    <TextBlock VerticalAlignment="Center" Text="Identifiant du périphérique" />
+                    <TextBox IsReadOnly="True" x:Name="DeviceId" Width="300" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                    <TextBlock VerticalAlignment="Center" Text="Système d'exploitation" />
+                    <TextBox IsReadOnly="True" x:Name="OperatingSystem" Width="300" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                    <TextBlock VerticalAlignment="Center" Text="Nom du PC" />
+                    <TextBox IsReadOnly="True" x:Name="ComputerName" Width="300" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                    <TextBlock VerticalAlignment="Center" Text="Nom du fabricant" />
+                    <TextBox IsReadOnly="True" x:Name="Manufacturer" Width="300" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
