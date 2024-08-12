@@ -33,6 +33,8 @@ namespace AppTooling
         public MainPage()
         {
             InitializeComponent();
+            NavigationViewControl.SelectedItem = NavigationViewControl.MenuItems[0];
+            ContentFrame.Navigate(typeof(HomePage), null);
         }
 
         private void NavigationViewControl_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)

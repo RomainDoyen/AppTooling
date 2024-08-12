@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.System;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +26,19 @@ namespace AppTooling
         public HomePage()
         {
             this.InitializeComponent();
+            ShowDisplayNameAsync();
+        }
+
+        private async void ShowDisplayNameAsync()
+        {
+            var users = await User.FindAllAsync();
+            var currentUser = users.Where(user => user.AuthenticationStatus == UserAuthenticationStatus.LocallyAuthenticated && user.Type == UserType.LocalUser).FirstOrDefault();
+
+            if (currentUser != null)
+            {
+                var displayName = await currentUser.GetPropertyAsync(KnownUserProperties.DisplayName);
+                WelcomText.Text = $"Bonjour {displayName}";
+            }
         }
     }
 }
