@@ -9,12 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <NavigationView>
+        <NavigationView x:Name="NavigationViewControl" PaneTitle="Outils DesignAndCreation"
+                        ItemInvoked="NavigationViewControl_ItemInvoked">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Accueil"></NavigationViewItem>
-                <NavigationViewItem Icon="Document" Content="Presse-papiers"></NavigationViewItem>
-                <NavigationViewItem Icon="ContactInfo" Content="Informations système"></NavigationViewItem>
+                <NavigationViewItem Tag="home" Icon="Home" Content="Accueil"></NavigationViewItem>
+                <NavigationViewItem Tag="clipboard" Icon="Document" Content="Presse-papiers"></NavigationViewItem>
+                <NavigationViewItem Tag="device" Icon="ContactInfo" Content="Informations système"></NavigationViewItem>
             </NavigationView.MenuItems>
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" Padding="10" IsTabStop="False" />
+            </ScrollViewer>
         </NavigationView>
     </Grid>
 </Page>
