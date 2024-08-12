@@ -9,6 +9,23 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Text="Presse-papiers" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Presse-papiers" FontSize="40" Grid.Row="0" />
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                <ListView x:Name="lvHistoryItems">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                                <TextBox IsReadOnly="True" Text="{Binding Text}" Width="800"></TextBox>
+                            </StackPanel>
+                         </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
