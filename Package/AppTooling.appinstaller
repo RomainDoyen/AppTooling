@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling.appinstaller"
+	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="5636d50b-32e3-4267-ae59-e43c4b7af3f9"
+		Version="1.0.0.0"
+		Publisher="CN=DesignAndCreation"
+		Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/AppTooling_1.0.0.0_x86_x64_arm.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx"
+			Version="2.2.29512.0" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx"
+			Version="2.2.29512.0" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="arm"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/arm/Microsoft.NET.Native.Framework.2.2.appx"
+			Version="2.2.29512.0" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx"
+			Version="2.2.28604.0" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx"
+			Version="2.2.28604.0" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="arm"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/arm/Microsoft.NET.Native.Runtime.2.2.appx"
+			Version="2.2.28604.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="arm"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/arm/Microsoft.VCLibs.ARM.14.00.appx"
+			Version="14.0.33519.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Version="14.0.33519.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///C:/Users/Utilisateur/source/repos/AppTooling/Package/AppTooling_1.0.0.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
+			Version="14.0.33519.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

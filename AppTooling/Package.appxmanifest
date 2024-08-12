@@ -8,14 +8,14 @@
 
   <Identity
     Name="5636d50b-32e3-4267-ae59-e43c4b7af3f9"
-    Publisher="CN=Utilisateur"
+    Publisher="CN=DesignAndCreation"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="5636d50b-32e3-4267-ae59-e43c4b7af3f9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>AppTooling</DisplayName>
-    <PublisherDisplayName>Utilisateur</PublisherDisplayName>
+    <PublisherDisplayName>DesignAndCreation</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
