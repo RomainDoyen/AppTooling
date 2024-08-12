@@ -25,7 +25,7 @@ namespace AppTooling
     {
         private Dictionary<string, Type> pages = new Dictionary<string, Type>()
         {
-            { "home", typeof(MainPage) },
+            { "home", typeof(HomePage) },
             { "clipboard", typeof(ClipboardPage) },
             { "device", typeof(DevicePage) }
         };
